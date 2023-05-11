@@ -14,3 +14,10 @@ if (element.requestFullscreen) {
 }
 console.log("UNDER CONSTRUCTION")
 console.log("UNDER CONSTRUCTION")
+
+const Clickshitbtn = document.getElementById('mybtn1');
+
+Clickshitbtn.addEventListener('click', ()=>
+{
+  
+})
