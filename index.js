@@ -1,3 +1,4 @@
+'use strict'
 const fullscreen = ()=>{
 const element = document.documentElement; // Fullscreen the entire page
 if (element.requestFullscreen) {
@@ -16,8 +17,10 @@ console.log("UNDER CONSTRUCTION")
 console.log("UNDER CONSTRUCTION")
 
 const Clickshitbtn = document.getElementById('mybtn1');
-
+const cur_audio = new Audio('Resources/amugos_cursed.mp3')
 Clickshitbtn.addEventListener('click', ()=>
 {
-  
+  fullscreen();
+  console.log('playing');
+  cur_audio.play();
 })

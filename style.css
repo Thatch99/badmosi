@@ -1,6 +1,9 @@
 body {
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-}
+   background-image: url('http://m.gettywallpapers.com/wp-content/uploads/2022/06/Wallpaper-Dark.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}   
 
 .harras_btn {
     text-align: center;
