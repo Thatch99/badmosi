@@ -18,9 +18,12 @@ console.log("UNDER CONSTRUCTION")
 
 const Clickshitbtn = document.getElementById('mybtn1');
 const cur_audio = new Audio('Resources/amugos_cursed.mp3')
+const susImage = document.getElementById('image-hand');
+
 Clickshitbtn.addEventListener('click', ()=>
 {
   fullscreen();
   console.log('playing');
   cur_audio.play();
+  susImage.style.opacity = 1
 })
