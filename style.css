@@ -1,5 +1,5 @@
 body {
-   background-image: url('http://m.gettywallpapers.com/wp-content/uploads/2022/06/Wallpaper-Dark.jpg');
+   background-image: url('https://images7.alphacoders.com/114/1146879.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -34,6 +34,19 @@ body {
     background-color: #a00337;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+#overlay-white{
+    opacity: 0;
+    transition: opacity 0.1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    pointer-events: none;
+
+
 }
 
 .overlay{

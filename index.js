@@ -19,11 +19,18 @@ console.log("UNDER CONSTRUCTION")
 const Clickshitbtn = document.getElementById('mybtn1');
 const cur_audio = new Audio('Resources/amugos_cursed.mp3')
 const susImage = document.getElementById('image-hand');
+const flash_div = document.getElementById('overlay-white');
+const flashBang_audio = new Audio('Resources/Think Fast.mp3')
 
 Clickshitbtn.addEventListener('click', ()=>
 {
   fullscreen();
+  flashBang_audio.play();
   console.log('playing');
-  cur_audio.play();
-  susImage.style.opacity = 1
+  // cur_audio.play();
+  setTimeout(function(){
+    flash_div.style.opacity = 1
+    // Code to be executed
+  }, 1500);
+  // susImage.style.opacity = 1
 })
