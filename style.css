@@ -3,11 +3,21 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+   display:grid
+   
 }   
 
 .harras_btn {
     text-align: center;
     margin: 100px auto 0;
+}
+.ip-Display{
+    color: #d11c3b;
+    position: absolute;
+    font-size:larger;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
 }
 
 .btn1 {
