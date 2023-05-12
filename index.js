@@ -25,7 +25,7 @@ const flashBang_audio = new Audio('Resources/Think Fast.mp3')
 Clickshitbtn.addEventListener('click', ()=>
 {
   fullscreen();
-  flashBang_audio.volume = 1
+  flashBang_audio.volume += 1.0
   flashBang_audio.play();
   console.log('playing');
   // cur_audio.play();
