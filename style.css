@@ -3,72 +3,9 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   display:grid
-   
+   display: grid;
 }   
 
-.harras_btn {
-    text-align: center;
-    margin: 100px auto 0;
+h1{
+    color: white;
 }
-.ip-Display{
-    color: #d11c3b;
-    position: absolute;
-    font-size:larger;
-    text-align: center;
-    position: relative;
-    padding-top: 20px;
-}
-
-.btn1 {
-
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color:#d11c3b;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #e09b9b;
-}
-
-.btn1:hover {
-    background-color: #da1e2e
-}
-
-.btn1:active {
-    background-color: #a00337;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-#overlay-white{
-    opacity: 0;
-    transition: opacity 0.1s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    pointer-events: none;
-
-
-}
-
-.overlay{
-    opacity: 0;
-    transition: opacity 2s;
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    
-}
-
