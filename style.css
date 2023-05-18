@@ -1,11 +1,75 @@
-body {
-   background-image: url('https://images7.alphacoders.com/114/1146879.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   display: grid;
-}   
+*{
+    margin: 0;
+    padding: 0;
+}
 
-h1{
+body{
+    background-image: url('https://images7.alphacoders.com/114/1146879.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+}
+
+.writer{
     color: white;
+    display: flex;
+
+}
+
+.writer, .first-text{
+    font-size: 50px;
+}
+
+.wirter, .second-text{
+    height: 0px;
+    line-height: 60px;
+    
+}
+
+.second-text li{
+    position: relative;
+    color: rgb(233, 92, 122);
+    top: 0;
+    list-style: none;
+    padding: 0 20px;
+    text-shadow: 0 0 60px red;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -238px;
+    }
+}
+
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.second-text li span{
+    position: relative;
+}
+
+.second-text li span::before{
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 300px;
+    height: 58.9px;
+    background: black;
+    border-left: 2px solid cyan;
+    animation: typing 1.5s steps(10) infinite alternate;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -200px 0 27px;
+    }
 }
