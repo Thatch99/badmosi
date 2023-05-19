@@ -17,17 +17,20 @@ body{
 /* This is for main heading */
 .writer{
     display: inline;
+    position: relative;
+    top: 25px;
 }
 
 .text{
-    color: white;
+    color: cornsilk;
     font-size: 30px;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     border-right: 2px solid;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(44), cursor .4s step-end infinite alternate;
+    animation: typing 2.5s steps(44) infinite alternate, cursor .4s step-end infinite alternate-reverse;
 }
 
 @keyframes cursor {
@@ -37,7 +40,7 @@ body{
 }
 
 @keyframes typing {
-    from{
+    0%{
         width: 0;
     }
 }
