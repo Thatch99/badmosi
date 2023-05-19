@@ -204,3 +204,25 @@ body{
     0 0 30px #1eff45,
     0 0 60px #1eff45;
 }
+
+/* This is for the rotated side header */
+.heading3 h3{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    list-style: none;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    bottom: 145px;
+    left: 0;
+    margin-left: 20px;
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+    animation: colorful 5s infinite;
+}
+
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
