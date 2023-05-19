@@ -16,65 +16,29 @@ body{
 
 /* This is for main heading */
 .writer{
+    display: inline;
+}
+
+.text{
     color: white;
-    display: flex;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border-right: 2px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(44), cursor .4s step-end infinite alternate;
 }
 
-.writer, .first-text{
-    position: relative;
-    top: 19px;
-    font-size: 75px;
-}
-
-.wirter, .second-text{
-    height: 0px;
-    line-height: 60px;
-    font-size: 75px;
-}
-
-.second-text li{
-    position: relative;
-    color: rgb(233, 92, 122);
-    top: 33px;
-    list-style: none;
-    padding: 0 30px;
-    text-shadow: 0 0 20px red;
-    animation: slide 12s steps(1) infinite, colorful 6s infinite;
-}
-
-@keyframes slide {
-    100%{
-        top: -238px;
+@keyframes cursor {
+    50%{
+        border-color: transparent;
     }
 }
 
-@keyframes colorful {
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
-
-.second-text li span{
-    position: relative;
-}
-
-.second-text li span::before{
-    content: '';
-    position: absolute;
-    left: 0%;
-    width: 372px;
-    height: 67px;
-    background: black;
-    border-left: 2px solid cyan;
-    animation: typing 2s steps(1000) infinite alternate;
-    /* animation-iteration-count: infinite;
-    animation-direction: alternate; */
-}
-
-@keyframes typing{
-    100%{
-        left: 100%;
-        margin: 0 -200px 0 2px;
+@keyframes typing {
+    from{
+        width: 0;
     }
 }
 
