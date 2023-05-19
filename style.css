@@ -156,3 +156,33 @@ body{
     width: 60%;
     border-radius: 30px;
 }
+
+.container .btn::after{
+    content: '';
+    position: absolute;
+    left: 40%;
+    top: -5px;
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: red;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .btn:hover::after{
+    top: 0;
+    left: 22%;  
+    height: 50%;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.container .btn:nth-child(1)::before,
+.container .btn:nth-child(1)::after{
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71,
+    0 0 15px #ff1f71,
+    0 0 30px #ff1f71,
+    0 0 60px #ff1f71;
+}
