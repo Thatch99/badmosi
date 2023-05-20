@@ -119,3 +119,10 @@ body {
      right: 0;
     }
   }
+
+@media (max-width: 768px){
+    .heading3 h3 {
+        font-size: 25%;
+        
+    }
+}
