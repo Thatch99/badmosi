@@ -138,8 +138,8 @@ button {
     }
     .button-container {
         width: 100%;
-        position: relative;
-        top: 2%;
+        position: static;
+        /* top: 70%; */
         overflow: hidden;
     } 
     
