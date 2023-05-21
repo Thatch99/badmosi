@@ -117,7 +117,6 @@ button {
     letter-spacing: 20px;
     text-transform: uppercase;
     bottom: 10%;
-    left: 0;
     margin-left: 20px;
     transform: rotate(270deg);
     transform-origin: 0 0;
@@ -125,6 +124,21 @@ button {
 }
 
 
+@media (max-width: 768px) {
+    .heading3 h3 {
+        font-size: 100%;
+        color: cornsilk;
+        position: relative;
+        list-style: none;
+        letter-spacing: 1em;
+        text-transform: uppercase;
+        transform: rotate(360deg);
+        /* transform-origin: 0 0; */
+        text-shadow: 0 0 20px white;
+        text-align: center;
+
+    }
+}
 
 
 .video {
@@ -144,10 +158,3 @@ button {
     }
 }
 
-
-@media (max-width: 768px) {
-    .heading3 h3 {
-        font-size: 25%;
-
-    }
-}
