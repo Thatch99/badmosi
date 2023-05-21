@@ -59,16 +59,18 @@ body {
 /* This is for buttons */
 .button-container {
     width: auto;
-    /* position: fixed; */
+    position: relative;
+    top: -30em;
+    left: 1em;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     left: 10%;
     /* transform: translateY(50%); */
 }
 
 
 button {
-    /* position:fixed; */
     width: 10%;
     padding: 10px 20px;
     background-color: #2b2a2a;
@@ -113,6 +115,7 @@ button {
 }
 
 @media (max-width: 768px) {
+    
     .writer {
         left: 0%;
     }
@@ -133,10 +136,12 @@ button {
         /* right:10%; */
         
     }
-    /* .button-container {
-        
-       
-    } */
+    .button-container {
+        width: 100%;
+        position: relative;
+        top: 2%;
+        overflow: hidden;
+    } 
     
     .button-container button {
         width: 45%;
