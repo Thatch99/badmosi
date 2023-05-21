@@ -73,13 +73,18 @@ body {
 button {
     width: 10%;
     padding: 10px 20px;
-    background-color: #2b2a2a;
-    border-radius: 4px;
+    background-color: red;
+    border-radius: 10px;
     font-size: 16px;
     /* top: 100%; */
     margin-bottom: 5px;
+    animation: colorful 6s infinite;
+}
 
-    
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 
 /* This is for the rotated side header */
@@ -99,13 +104,9 @@ button {
     text-shadow: 0 0 20px white;
 }
 
-
-
-
 .video-container{
     width: 100%;
 }
-
 
 .video {
     margin: 10%;
