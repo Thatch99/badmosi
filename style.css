@@ -42,8 +42,6 @@ body {
     animation: typing 3s steps(44), cursor .4s step-end infinite alternate;
 }
 
-
-
 @keyframes cursor {
     50% {
         border-color: transparent;
