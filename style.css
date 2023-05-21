@@ -69,6 +69,7 @@ body {
 
 
 button {
+    color: wheat;
     width: 10%;
     padding: 10px 20px;
     background-color: red;
@@ -77,6 +78,7 @@ button {
     /* top: 100%; */
     margin-bottom: 5px;
     animation: colorful 6s infinite;
+    background: linear-gradient(to right, rgb(255, 0, 0), transparent);
 }
 
 @keyframes colorful {
