@@ -1,11 +1,14 @@
 * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     font-family: 'Play', sans-serif;
 }
 
 html {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
@@ -16,6 +19,7 @@ body {
     background-attachment: fixed;
     display: grid;
     justify-content: center;
+    /* height: 100%; */
     overflow-x: hidden;
 }
 
@@ -38,24 +42,8 @@ body {
     animation: typing 3s steps(44), cursor .4s step-end infinite alternate;
 }
 
-@media (max-width: 768px) {
-    .text {
-        padding-left: 20%;
-        padding-right: 10%;
-        font-size: 90%;
-        white-space: normal;
-        word-wrap: break-word;
-        text-align: left;
-        left: 0;
-        overflow-wrap: break-word;
 
-    }
-}
-@media (max-width: 768px) {
-    .writer {
-        left: 0%;
-    }
-}
+
 @keyframes cursor {
     50% {
         border-color: transparent;
@@ -70,49 +58,35 @@ body {
 
 /* This is for buttons */
 .button-container {
-    width: 100%;
-    position: relative;
+    width: auto;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
-    position: fixed;
-    top: 7%;
     left: 10%;
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
 }
 
 
 button {
     /* position:fixed; */
-    width: 8%;
+    width: 10%;
     padding: 10px 20px;
     background-color: #2b2a2a;
     border-radius: 4px;
     font-size: 16px;
+    /* top: 100%; */
     margin-bottom: 5px;
 
-
-}
-
-@media (max-width: 768px) {
-    .button-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .button-container button {
-        width: 45%;
-        margin: 5px;
-    }
+    
 }
 
 /* This is for the rotated side header */
+
+/* CHOOSE WISELY */
 .heading3 h3 {
     font-size: 200%;
     color: cornsilk;
-    position: fixed;
+    position: relative;
     list-style: none;
     letter-spacing: 20px;
     text-transform: uppercase;
@@ -124,20 +98,10 @@ button {
 }
 
 
-@media (max-width: 768px) {
-    .heading3 h3 {
-        font-size: 100%;
-        color: cornsilk;
-        position: relative;
-        list-style: none;
-        letter-spacing: 1em;
-        text-transform: uppercase;
-        transform: rotate(360deg);
-        /* transform-origin: 0 0; */
-        text-shadow: 0 0 20px white;
-        text-align: center;
 
-    }
+
+.video-container{
+    width: 100%;
 }
 
 
@@ -149,12 +113,60 @@ button {
 }
 
 @media (max-width: 768px) {
+    .writer {
+        left: 0%;
+    }
     .video {
+        position: relative;
         width: 100%;
         height: auto;
         right:10%;
+        top:10% ;
         
-
+        
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        /* top:-80%; */
+        /* right:10%; */
+        
+    }
+    /* .button-container {
+        
+       
+    } */
+    
+    .button-container button {
+        width: 45%;
+        /* margin: 5px; */
+    }
+    .heading3 h3 {
+        font-size: 100%;
+        color: cornsilk;
+        position: static;
+        list-style: none;
+        letter-spacing: 1em;
+        text-transform: uppercase;
+        transform: rotate(360deg);
+        /* transform-origin: 0 0; */
+        text-shadow: 0 0 20px white;
+        top:initial;
+        /* bottom: 1%; */
+        text-align: center;
+        
+    }
+    .text {
+        padding-left: 20%;
+        padding-right: 10%;
+        font-size: 90%;
+        white-space: normal;
+        word-wrap: break-word;
+        text-align: left;
+        left: 0;
+        overflow-wrap: break-word;
+    
     }
 }
 
