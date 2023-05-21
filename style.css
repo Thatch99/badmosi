@@ -24,6 +24,7 @@ body {
     display: inline;
     position: relative;
     top: 25px;
+    left:10%;
 }
 
 .text {
@@ -33,10 +34,28 @@ body {
     text-transform: uppercase;
     border-right: 2px solid;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden; 
     animation: typing 3s steps(44), cursor .4s step-end infinite alternate;
 }
 
+@media (max-width: 768px) {
+    .text {
+        padding-left: 20%;
+        padding-right: 10%;
+        font-size: 90%;
+        white-space: normal;
+        word-wrap: break-word;
+        text-align: left;
+        left: 0;
+        overflow-wrap: break-word;
+
+    }
+}
+@media (max-width: 768px) {
+    .writer {
+        left: 0%;
+    }
+}
 @keyframes cursor {
     50% {
         border-color: transparent;
@@ -125,20 +144,6 @@ button {
     }
 }
 
-
-@media (max-width: 768px) {
-    .text {
-        padding-left: 20%;
-        padding-right: 10%;
-        font-size: 90%;
-        white-space: normal;
-        word-wrap: break-word;
-        text-align: left;
-        left: 0;
-        overflow-wrap: break-word;
-
-    }
-}
 
 @media (max-width: 768px) {
     .heading3 h3 {
