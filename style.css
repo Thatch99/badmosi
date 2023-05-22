@@ -32,13 +32,15 @@ body {
 }
 
 .text {
-    color: cornsilk;
+    color: #fa0122;
     font-size: 30px;
     letter-spacing: 5px;
     text-transform: uppercase;
     border-right: 2px solid;
     white-space: nowrap;
     overflow: hidden; 
+    text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f;
+
     animation: typing 3s steps(44), cursor .4s step-end infinite alternate;
 }
 
@@ -74,18 +76,58 @@ button {
     padding: 10px 20px;
     background-color: red;
     border-radius: 10px;
+    border:none;
     font-size: 16px;
     /* top: 100%; */
-    margin-bottom: 5px;
+    margin-bottom: 5em;
     animation: colorful 6s infinite;
     background: linear-gradient(to right, rgb(255, 0, 0), transparent);
 }
 
-@keyframes colorful {
+.button-1 {
+    background-color: cornflowerblue; 
+  }
+  
+  .button-2 {
+    background-color: rgb(128, 255, 24); 
+  }
+  
+  .button-3 {
+    background-color: rgb(255, 0, 128); 
+  }
+
+button:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    
+}
+.button-2:hover{
+    background: #39eb29;
+    color: #050801;
+    box-shadow: 0 0 5px #39eb29,
+                0 0 25px #39eb29,
+                0 0 50px #39eb29,
+                0 0 200px #39eb29;
+    
+}
+.button-3:hover{
+    background: #f7163c;
+    color: #f8f8f8;
+    box-shadow: 0 0 5px #f7163c,
+                0 0 25px #f7163c,
+                0 0 50px #f7163c,
+                0 0 200px #f7163c;
+    
+}
+/* @keyframes colorful {
     100%{
         filter: hue-rotate(360deg);
     }
-}
+} */
 
 /* This is for the rotated side header */
 
@@ -101,7 +143,7 @@ button {
     margin-left: 20px;
     transform: rotate(270deg);
     transform-origin: 0 0;
-    text-shadow: 0 0 20px white;
+    /* text-shadow: 0 0 20px white; */
 }
 
 .video-container{
@@ -115,8 +157,13 @@ button {
     right:-20%;
 }
 
+
+
 @media (max-width: 768px) {
-    
+    html,body{
+        height: 100%;
+        margin: 0;
+    }
     .writer {
         left: 0%;
     }
@@ -138,14 +185,22 @@ button {
         
     }
     .button-container {
+        display:flex;
+        flex-direction: column;
         width: 100%;
-        position: static;
+        height: 100%;
+        position:initial;
         /* top: 70%; */
-        overflow: hidden;
+
+        /* overflow: hidden; */
     } 
     
     .button-container button {
+        position: relative;
         width: 45%;
+        left:30%;
+        margin-bottom: 2em;
+        /* left: 0; */
         /* margin: 5px; */
     }
     .heading3 h3 {
@@ -166,7 +221,7 @@ button {
     .text {
         padding-left: 20%;
         padding-right: 10%;
-        font-size: 90%;
+        font-size: 100%;
         white-space: normal;
         word-wrap: break-word;
         text-align: left;
