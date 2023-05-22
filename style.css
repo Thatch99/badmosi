@@ -28,7 +28,7 @@ body {
     display: inline;
     position: relative;
     top: 25px;
-    left:10%;
+    left: 10%;
 }
 
 .text {
@@ -38,7 +38,7 @@ body {
     text-transform: uppercase;
     border-right: 2px solid;
     white-space: nowrap;
-    overflow: hidden; 
+    overflow: hidden;
     text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f;
 
     animation: typing 3s steps(44), cursor .4s step-end infinite alternate;
@@ -76,53 +76,70 @@ button {
     padding: 10px 20px;
     background-color: red;
     border-radius: 10px;
-    border:none;
+    /* border:; */
     font-size: 16px;
     /* top: 100%; */
     margin-bottom: 5em;
     animation: colorful 6s infinite;
-    background: linear-gradient(to right, rgb(255, 0, 0), transparent);
+    /* background: linear-gradient(to right, rgb(21, 163, 104), transparent); */
 }
 
 .button-1 {
-    background-color: cornflowerblue; 
-  }
-  
-  .button-2 {
-    background-color: rgb(128, 255, 24); 
-  }
-  
-  .button-3 {
-    background-color: rgb(255, 0, 128); 
-  }
+    border: 10%;
+    border-style: solid;
+    border-color: #03e9f4;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(244, 0, 0, 0) 0%, rgba(250, 20, 64, 0) 80%, rgba(39, 255, 208, 0.584) 100%);
 
-button:hover{
+}
+
+.button-2 {
+    border: 10%;
+    border-style: solid;
+    border-color: #37ff41;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(244, 0, 0, 0) 0%, rgba(250, 20, 64, 0) 80%, rgba(39, 255, 86, 0.584) 100%);
+    
+}
+
+.button-3 {
+    border: 10%;
+    border-style: solid;
+    border-color: #f4033f;
+    background: rgb(244, 0, 0);
+    background: linear-gradient(180deg, rgba(244, 0, 0, 0) 0%, rgba(250, 20, 64, 0) 80%, rgba(255, 39, 127, 0.5839267591802346) 100%);
+}
+
+button:hover {
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-    
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+
 }
-.button-2:hover{
+
+.button-2:hover {
     background: #39eb29;
     color: #050801;
     box-shadow: 0 0 5px #39eb29,
-                0 0 25px #39eb29,
-                0 0 50px #39eb29,
-                0 0 200px #39eb29;
-    
+        0 0 25px #39eb29,
+        0 0 50px #39eb29,
+        0 0 200px #39eb29;
+
 }
-.button-3:hover{
+
+.button-3:hover {
     background: #f7163c;
     color: #f8f8f8;
     box-shadow: 0 0 5px #f7163c,
-                0 0 25px #f7163c,
-                0 0 50px #f7163c,
-                0 0 200px #f7163c;
-    
+        0 0 25px #f7163c,
+        0 0 50px #f7163c,
+        0 0 200px #f7163c;
+
 }
+
 /* @keyframes colorful {
     100%{
         filter: hue-rotate(360deg);
@@ -146,7 +163,7 @@ button:hover{
     /* text-shadow: 0 0 20px white; */
 }
 
-.video-container{
+.video-container {
     width: 100%;
 }
 
@@ -154,55 +171,62 @@ button:hover{
     margin: 10%;
     position: relative;
     width: 30%;
-    right:-20%;
+    right: -20%;
 }
 
 
 
 @media (max-width: 768px) {
-    html,body{
+
+    html,
+    body {
         height: 100%;
         margin: 0;
     }
+
     .writer {
         left: 0%;
     }
+
     .video {
         position: relative;
         width: 100%;
         height: auto;
-        right:10%;
-        top:10% ;
-        
-        
+        right: 10%;
+        top: 10%;
+
+
     }
+
     .video-container {
         position: relative;
         width: 100%;
         height: auto;
         /* top:-80%; */
         /* right:10%; */
-        
+
     }
+
     .button-container {
-        display:flex;
+        display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
-        position:initial;
+        position: initial;
         /* top: 70%; */
 
         /* overflow: hidden; */
-    } 
-    
+    }
+
     .button-container button {
         position: relative;
         width: 45%;
-        left:30%;
+        left: 30%;
         margin-bottom: 2em;
         /* left: 0; */
         /* margin: 5px; */
     }
+
     .heading3 h3 {
         font-size: 100%;
         color: cornsilk;
@@ -213,11 +237,12 @@ button:hover{
         transform: rotate(360deg);
         /* transform-origin: 0 0; */
         text-shadow: 0 0 20px white;
-        top:initial;
+        top: initial;
         /* bottom: 1%; */
         text-align: center;
-        
+
     }
+
     .text {
         padding-left: 20%;
         padding-right: 10%;
@@ -227,7 +252,6 @@ button:hover{
         text-align: left;
         left: 0;
         overflow-wrap: break-word;
-    
+
     }
 }
-
