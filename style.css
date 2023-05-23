@@ -40,21 +40,46 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f;
-
-    animation: typing 3s steps(44), cursor .4s step-end infinite alternate;
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms infinite;
+    /* animation: typing 4s steps(44, end); */
 }
 
-@keyframes cursor {
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: hsl(0, 0%, 80%);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* @keyframes cursor {
     50% {
         border-color: transparent;
     }
 }
 
 @keyframes typing {
-    0% {
+    from {
         width: 0;
     }
-}
+
+    to {
+        width: 100%;
+    }
+} */
 
 /* This is for buttons */
 .button-container {
@@ -99,7 +124,7 @@ button {
     border-color: #37ff41;
     background: rgb(0, 0, 0);
     background: linear-gradient(180deg, rgba(244, 0, 0, 0) 0%, rgba(250, 20, 64, 0) 80%, rgba(39, 255, 86, 0.584) 100%);
-    
+
 }
 
 .button-3 {
@@ -160,6 +185,7 @@ button:hover {
     margin-left: 20px;
     transform: rotate(270deg);
     transform-origin: 0 0;
+    text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f;
     /* text-shadow: 0 0 20px white; */
 }
 
@@ -185,8 +211,56 @@ button:hover {
     }
 
     .writer {
-        left: 0%;
+        display: block;
+        height: 5em;
+        position: relative;
+        left: 0;
     }
+
+    .text {
+        height: 100%;
+        /* padding-right: 10%; */
+        font-size: 110%;
+        white-space: normal;
+        word-wrap: break-word;
+        text-align: center;
+        /* left: 0; */
+        border-right: 2px solid hsl(0, 0%, 80%);
+        overflow-wrap: break-word;
+        cursor: none;
+        animation: typewriter 3s steps(100) 1s 1 normal both, blinkTextCursor 500ms infinite;
+        /* animation: typing 4s steps(100, end); */
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: hsl(0, 0%, 80%);
+        }
+
+        to {
+            border-right-color: transparent;
+        }
+    }
+
+    /* @keyframes typing-small {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    } */
 
     .video {
         position: relative;
@@ -236,22 +310,18 @@ button:hover {
         text-transform: uppercase;
         transform: rotate(360deg);
         /* transform-origin: 0 0; */
-        text-shadow: 0 0 20px white;
+        text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f;
         top: initial;
         /* bottom: 1%; */
         text-align: center;
 
     }
 
-    .text {
-        padding-left: 20%;
-        padding-right: 10%;
-        font-size: 100%;
-        white-space: normal;
-        word-wrap: break-word;
-        text-align: left;
-        left: 0;
-        overflow-wrap: break-word;
 
-    }
+    /* @keyframes cursor-small {
+        50% {
+            border-color: transparent;
+        }
+    } */
+
 }
