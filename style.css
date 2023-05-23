@@ -15,6 +15,10 @@ html {
 @font-face {
     font-family: 'Skyrim_Daedra';
     src: url('Resources/Fonts/Skyrim_Daedra.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'UrnordiskaRunor';
+    src: url('Resources/Fonts/UrnordiskaRunor.ttf') format('truetype');
   }
 body {
     background-image: url('https://images7.alphacoders.com/114/1146879.jpg');
@@ -103,7 +107,7 @@ body {
 
 
 button {
-    font-family: 'Skyrim_Daedra';
+
     color: wheat;
     width: 100%;
     position:relative;
@@ -118,6 +122,7 @@ button {
 }
 
 .button-1 {
+    
     border: 10%;
     border-style: solid;
     border-color: #03e9f4;
