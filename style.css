@@ -12,7 +12,10 @@ html {
     
     overflow-x: hidden;
 }
-
+@font-face {
+    font-family: 'Skyrim_Daedra';
+    src: url('Resources/Fonts/Skyrim_Daedra.ttf') format('truetype');
+  }
 body {
     background-image: url('https://images7.alphacoders.com/114/1146879.jpg');
     background-repeat: no-repeat;
@@ -100,6 +103,7 @@ body {
 
 
 button {
+    font-family: 'Skyrim_Daedra';
     color: wheat;
     width: 100%;
     position:relative;
