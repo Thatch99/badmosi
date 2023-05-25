@@ -197,7 +197,7 @@ button:hover {
     transform: rotate(270deg);
     /* transform: translate(-50%, -50%) rotate(-90deg); */
     position: relative;
-    top: 100%;
+    top: 130%;
     letter-spacing: 0.6em;
     left: 0;
     overflow: hidden;
