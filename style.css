@@ -36,7 +36,7 @@ body {
 .writer {
     display: inline;
     position: relative;
-    top: 25px;
+    /* top: 2%; */
     left: 10%;
 }
 
