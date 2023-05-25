@@ -211,8 +211,9 @@ button:hover {
 
 .video-container {
     position: relative;
+    margin-top: 1%;
     width: 50%;
-    padding-top: 5%;
+    padding-top: 1%;
     display: inline-block;
     transform: translateX(50%);
 }
@@ -241,6 +242,7 @@ button:hover {
     }
 
     .text {
+        position: relative;
         height: 100%;
         /* padding-right: 10%; */
         font-size: 110%;
@@ -323,7 +325,7 @@ button:hover {
     .button-container button {
         position: relative;
         width: 45%;
-        left: 30%;
+        left: 27%;
         margin-bottom: 2em;
         /* left: 0; */
         /* margin: 5px; */
