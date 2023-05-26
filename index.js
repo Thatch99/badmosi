@@ -15,7 +15,7 @@ const fullscreen = () => {
 
 function redirectToPage() {
 
-  window.location.href = "suprise.html";
+  window.location.href = "Cridustine.html";
 }
 
 
@@ -35,8 +35,8 @@ btn1_method.addEventListener('click', () => {
     flash_div.style.opacity = 1
     
   }, 1500);
-  // setTimeout(function () {
-  //   redirectToPage()
-  // }, 3000);
-  // susImage.style.opacity = 1
+  setTimeout(function () {
+    redirectToPage()
+  }, 3000);
+  susImage.style.opacity = 1
 })
