@@ -22,7 +22,7 @@ function redirectToPage() {
 const btn1_method = document.querySelector('.button-1');
 // const cur_audio = new Audio('Resources/amugos_cursed.mp3')
 // const susImage = document.getElementById('image-hand');
-// const flash_div = document.getElementById('overlay-white');
+const flash_div = document.getElementById('flash');
 const flashBang_audio = new Audio('Resources/Think Fast.mp3')
 
 

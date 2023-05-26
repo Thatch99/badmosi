@@ -9,7 +9,7 @@ html {
     /* height: 100%; */
     margin: 0;
     padding: 0;
-
+    
     overflow: hidden;
 }
 
@@ -30,6 +30,7 @@ body {
     backdrop-filter: blur(1px);
     background-attachment: fixed;
     display: grid;
+    margin: 0;
     justify-content: center;
     /* height: 100%; */
     overflow-x: hidden;
@@ -56,20 +57,25 @@ body {
     /* animation: typing 4s steps(44, end); */
 }
 
-/* .flsh {
-    position:absolute;
+#flash {
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
 }
 
-.flsh img{
-    display:flex;
-    width: fit-content;
-    height: 100%;
-} */
+#flash img{
+   display: block; 
+   width: 100%; 
+   height: 100%;
+   user-select: none;
+
+
+}
 
 
 @keyframes typewriter {
