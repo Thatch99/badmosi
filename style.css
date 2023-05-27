@@ -102,8 +102,8 @@ body {
 .button-container {
     width: fit-content;
     position: relative;
-    top: -137%;
-    display: flex;
+    top: -25rem;
+    display:inline-flex;
     flex-direction: column;
     /* height: fit-content; */
     /* top: -30em; */
@@ -198,14 +198,15 @@ button:hover {
 /* CHOOSE WISELY */
 .heading3 {
     font-size: 200%;
-    color: cornsilk;
+    display:inline-flexbox;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     transform-origin: bottom left;
     position: relative;
     transform: rotate(270deg);
     /* transform: translate(-50%, -50%) rotate(-90deg); */
     position: relative;
-    top: 130%;
+    top: 10rem;
     letter-spacing: 0.6em;
     left: 0;
     overflow: hidden;
@@ -383,6 +384,17 @@ button:hover {
         text-align: center;
         overflow: hidden;
 
+    }
+    #flash {
+        position: fixed;
+        /* top: 0;
+        left: 0; */
+        width: 100%;
+        height: 100%;
+        /* z-index: 9999; */
+        opacity: 0;
+        pointer-events: none;
+        /* background-size: cover; */
     }
 
 
