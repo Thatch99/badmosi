@@ -69,7 +69,7 @@ body {
 #flash {
     position: fixed;
     /* top: 0;*/
-    left: 0; 
+    left: 0;
     width: 100%;
     height: 100%;
     /* z-index: 9999; */
@@ -244,13 +244,15 @@ button:hover {
         height: 100%;
         margin: 0;
     }
+
     #all-container {
         height: 100%;
         width: 100%;
         overflow-x: hidden;
-        display:flex;
-        flex-direction:none;
+        display: flex;
+        flex-direction: none;
     }
+
     .writer {
         display: block;
         height: 5em;
@@ -384,13 +386,13 @@ button:hover {
         position: relative;
         list-style: none;
         width: 100%;
-        height:30%;
+        height: 30%;
         letter-spacing: 0.3em;
         text-transform: uppercase;
         transform: rotate(360deg);
         text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f;
         top: initial;
-        left:0;
+        left: 0;
         text-align: center;
         overflow: hidden;
 
