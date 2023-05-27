@@ -28,7 +28,7 @@ const flashBang_audio = new Audio('Resources/Think Fast.mp3')
 
 btn1_method.addEventListener('click', () => {
   fullscreen();
-  flashBang_audio.play();
+  // flashBang_audio.play();
   console.log('playing');
   // cur_audio.play();
   setTimeout(function () {
