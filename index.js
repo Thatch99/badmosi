@@ -28,15 +28,15 @@ const flashBang_audio = new Audio('Resources/Think Fast.mp3')
 
 btn1_method.addEventListener('click', () => {
   fullscreen();
-  flashBang_audio.play();
+  // flashBang_audio.play();
   console.log('playing');
   // cur_audio.play();
   setTimeout(function () {
     flash_div.style.opacity = 1
     
   }, 1500);
-  setTimeout(function () {
-    redirectToPage()
-  }, 3000);
+  // setTimeout(function () {
+  //   redirectToPage()
+  // }, 3000);
   susImage.style.opacity = 1
 })
