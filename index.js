@@ -19,11 +19,8 @@ function redirectToPage() {
 
 const btn1_method = document.querySelector('.button-1');
 const flash_div = document.getElementById('flash');
-const flashBang_audio = new Audio('Resources/Think Fast.mp3');
-
 btn1_method.addEventListener('click', () => {
   fullscreen();
-  flashBang_audio.play();
   setTimeout(() => {
     flash_div.style.opacity = 1;
   }, 1500);
