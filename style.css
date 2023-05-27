@@ -36,6 +36,13 @@ body {
     overflow-x: hidden;
 }
 
+#all-container {
+    height: 100vh;
+    width:max-content;
+    /* Set the height to 100% of the viewport height */
+    overflow-y: hidden;
+}
+
 /* This is for main heading */
 .writer {
     display: inline;
@@ -103,7 +110,7 @@ body {
     width: fit-content;
     position: relative;
     top: -25rem;
-    display:inline-flex;
+    display: inline-flex;
     flex-direction: column;
     /* height: fit-content; */
     /* top: -30em; */
@@ -197,8 +204,8 @@ button:hover {
 
 /* CHOOSE WISELY */
 .heading3 {
-    font-size: 200%;
-    display:inline-flexbox;
+    font-size: 1.6rem;
+    display: inline-flexbox;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     transform-origin: bottom left;
@@ -206,12 +213,12 @@ button:hover {
     transform: rotate(270deg);
     /* transform: translate(-50%, -50%) rotate(-90deg); */
     position: relative;
-    top: 10rem;
+    top: 6rem;
     letter-spacing: 0.6em;
     left: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
-    width: 80%;
+    width: 70%;
     text-align: center;
     text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f;
 }
@@ -385,6 +392,7 @@ button:hover {
         overflow: hidden;
 
     }
+
     #flash {
         position: fixed;
         /* top: 0;
