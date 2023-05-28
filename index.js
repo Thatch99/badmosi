@@ -16,9 +16,16 @@ const fullscreen = () => {
 function redirectToPage() {
   window.location.href = 'Cridustine.html';
 }
+function redirectToGoblin() {
+  window.location.href = 'Gobin_Balls.html';
+}
 
 const btn1_method = document.querySelector('.button-1');
+const btn2_method = document.querySelector('.button-2');
 const flash_div = document.getElementById('flash');
+btn2_method.addEventListener('click',()=>{
+  redirectToGoblin();
+})
 btn1_method.addEventListener('click', () => {
   fullscreen();
   setTimeout(() => {
