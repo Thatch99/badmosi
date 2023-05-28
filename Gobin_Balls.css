@@ -7,12 +7,13 @@ body{
     background-image: url('https://giffiles.alphacoders.com/209/209037.gif');
     background-repeat: no-repeat;
     display: flex;
+    overflow: hidden;
 }
 
 .container{
     width: 500px;
     height: 400px;
-    margin: 100px auto;
+    margin: 200px auto;
 }
 
 .glass{
@@ -22,6 +23,9 @@ body{
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align:center;
+    color: aqua;
+    font-size: larger;
 }
 
 @media (max-width: 800px) {
