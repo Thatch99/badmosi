@@ -14,11 +14,14 @@ function httpGetAsync(url, callback) {
 const url = "https://ipgeolocation.abstractapi.com/v1/?api_key=6088fe30129a450da65421439b0a2cfd";
 
 httpGetAsync(url, function (responseArray) {
-    ipAddress = responseArray['ip_address'];
+    
     const ip_container = document.querySelector('#ip-container');
     const region_container = document.querySelector('#region-container');
-    ip_container.textContent = ipAddress;
-    region_container.textContent = responseArray['region'];
+    const isp_container = document.querySelector('#isp-container');
 
+    ip_container.textContent = responseArray.ip_address;
+    region_container.textContent = responseArray.region;
+    isp_container.textContent = responseArray.connection.organization_name;
+    
 });
 
