@@ -1,4 +1,6 @@
 
+const sound = new Audio('Resources/amugos_cursed.mp3');
+window.addEventListener("mousemove", () => { sound.play() });
 function httpGetAsync(url, callback) {
     const xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
@@ -12,8 +14,6 @@ function httpGetAsync(url, callback) {
 }
 
 const url = "https://ipgeolocation.abstractapi.com/v1/?api_key=6088fe30129a450da65421439b0a2cfd";
-const sound = new Audio('Resources/amugos_cursed.mp3');
-window.addEventListener("mousemove", () => { sound.play() });
 
 
 httpGetAsync(url, function (responseArray) {
