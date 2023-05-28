@@ -26,6 +26,14 @@ body{
     text-align:center;
     color: aqua;
     font-size: larger;
+    animation: colorful 6s infinite;
+}
+
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
 }
 
 @media (max-width: 800px) {
