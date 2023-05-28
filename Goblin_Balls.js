@@ -1,34 +1,23 @@
-// fetch("https://api.ipify.org?format=json")
-//     .then(response => response.json())
-//     .then(data => {
-//         const ipAddress = data.ip;
-//         const ip_container = document.querySelector('#ip-container');
-//         ip_container.textContent = ipAddress;
-//     })
-//     .catch(error => {
-//         console.error("Could not get IP address: ", error);
-//     });
 
-// fetch('https://api.ipify.org?format=json')
-//     .then(response => response.json())
-//     .then(data => {
-//         const ip_container = document.querySelector('#ip-container');
-//         ip_container.textContent = data.ip;
-//     })
-//     .catch(error => {
-//         console.error("Error retrieving IP address:", error);
-//     });
+function httpGetAsync(url, callback) {
+    const xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            const responseArray = JSON.parse(xmlHttp.responseText);
+            callback(responseArray);
+        }
+    };
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send(null);
+}
 
+const url = "https://ipgeolocation.abstractapi.com/v1/?api_key=6088fe30129a450da65421439b0a2cfd";
 
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const apiUrl = 'https://api.ipify.org?format=json';
-
-fetch(proxyUrl + apiUrl)
-  .then(response => response.json())
-  .then(data => {
+httpGetAsync(url, function (responseArray) {
+    // Process the array
+    ipAddress = responseArray['ip_address'];
     const ip_container = document.querySelector('#ip-container');
-    ip_container.textContent = data.ip;
-  })
-  .catch(error => {
-    console.error("Error retrieving IP address:", error);
-  });
+    ip_container.textContent = ipAddress;
+
+});
+
