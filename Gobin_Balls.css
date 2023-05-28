@@ -54,10 +54,28 @@ h1{
 #ip-container{
     position: relative;
     font-size: 50px;
-
+    top: 40px;
 }
 
 #region-container{
     position: relative;
     font-size: 40px;
+    top: 115px;
+}
+
+@media (max-width: 800px) {
+    h1{
+        font-size: 28px;
+        top: 190px;
+    }
+
+    #ip-container{
+        font-size: 45px;
+        top: 38px;
+    }
+
+    #region-container{
+        font-size: 38px;
+        top: 110px;
+    }
 }
