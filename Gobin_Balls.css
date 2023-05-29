@@ -9,7 +9,7 @@
     src: url('Resources/Fonts/who asks satan.ttf') format('truetype');
 }
 body{
-    background-image: url('https://giffiles.alphacoders.com/209/209037.gif');
+    /* background-image: url('https://giffiles.alphacoders.com/209/209037.gif'); */
     background-repeat: no-repeat;
     display: flex;
     overflow: hidden;
