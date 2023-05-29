@@ -1,3 +1,7 @@
+window.addEventListener("mousemove", function () {
+    let video = document.getElementById('video-bg');
+    video.play();
+});
 
 // const sound = new Audio('Resources/amugos_cursed.mp3');
 // window.addEventListener("mousemove", () => { sound.play() });
