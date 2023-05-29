@@ -3,8 +3,7 @@ window.addEventListener("mousemove", function () {
     video.play();
 });
 
-// const sound = new Audio('Resources/amugos_cursed.mp3');
-// window.addEventListener("mousemove", () => { sound.play() });
+
 function httpGetAsync(url, callback) {
     const xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
