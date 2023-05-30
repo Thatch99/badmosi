@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Who asks Satan';
     letter-spacing: 1rem;
 }
+
 @font-face {
     font-family: 'Who asks Satan';
     src: url('Resources/Fonts/who asks satan.ttf') format('truetype');
 }
-body{
+
+body {
     /* background-image: url('https://giffiles.alphacoders.com/209/209037.gif'); */
     background-repeat: no-repeat;
     display: flex;
     overflow: hidden;
 }
 
-.container{
+.container {
     width: 500px;
     height: 400px;
     margin: 200px auto;
@@ -29,16 +31,16 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
-  
-.glass{
+}
+
+.glass {
     /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); */
 
     /* -webkit-backdrop-filter: blur(10px); */
     /* border-radius: 20px; */
     /* border:1px solid rgba(255, 255, 255, 0.18); */
     /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
-    text-align:center;
+    text-align: center;
     color: aqua;
     font-size: larger;
     color: rgb(197, 18, 18);
@@ -47,51 +49,53 @@ body{
 }
 
 @keyframes colorful {
-    100%{
+    100% {
         filter: hue-rotate(360deg);
     }
-    
+
 }
 
 
-h1{
+h1 {
     position: relative;
     font-size: 30px;
     top: 200px;
 }
 
-#ip-container{
+#ip-container {
     position: relative;
     font-size: 50px;
     top: 40px;
 }
 
-#region-container{
+#region-container {
     position: relative;
     font-size: 40px;
     top: 115px;
 }
 
 @media (max-width: 800px) {
-    *{
+    * {
         letter-spacing: 0.4rem;
     }
-    .container{
+
+    .container {
         width: 800px;
         height: 350px;
-        margin: 15px ;
+        margin: 15px;
     }
-    h1{
+
+    h1 {
         font-size: 28px;
         top: 190px;
     }
-    
-    #ip-container{
+
+    #ip-container {
         font-size: 45px;
         top: 38px;
     }
 
-    #region-container{
+    #region-container {
         font-size: 38px;
         top: 110px;
     }
