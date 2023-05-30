@@ -1,47 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Play', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.warning{
+.hidden {
+    display: none;
+}
+
+.warning-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 9999;
+  
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.warning {
     color: red;
     position: relative;
-    top: 320px;
-    left: 145px;
+    /* top: 320px; */
+    transform: translate(25%,-25%);
     font-size: 20px;
     text-shadow: 0 0 90px red;
 }
 
-.continue{
+.text-content {
     position: relative;
+    /* z-index: 2; */
+    height: 100%;
+    width: 100%;
+}
+
+.continue {
+    position: relative;
+    /* top: 320px; */
+
     text-align: center;
-    top: 442px;
-    left: -310px;
+    /* top: 442px; */
+    /* left: -310px; */
     width: 245px;
     padding: 15px;
     font-size: 20px;
-    background: linear-gradient(45deg , rgb(50, 84, 177), rgb(248, 81, 81));
-    border:none;
+    background: linear-gradient(45deg, rgb(50, 84, 177), rgb(248, 81, 81));
+    border: none;
     border-radius: 10px;
     animation: colorful 5s infinite;
 }
 
 @keyframes colorful {
-    100%{
+    100% {
         filter: hue-rotate(360deg);
     }
-    
+
 }
 
-.continue:hover{
+.continue:hover {
     background: red;
     color: rgb(0, 238, 255);
     box-shadow: 0 0 2px red,
@@ -52,14 +79,13 @@ body{
 
 
 @media (max-width: 800px) {
-    .warning{
+    .warning {
         font-size: 20px;
         top: 20px;
     }
 
-    .continue{
+    .continue {
         top: 250px;
         left: -80px;
     }
 }
-
