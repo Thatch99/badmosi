@@ -29,6 +29,7 @@ body{
     padding: 15px;
     font-size: 20px;
     background: linear-gradient(45deg , rgb(50, 84, 177), rgb(248, 81, 81));
+    border:none;
     border-radius: 10px;
     animation: colorful 5s infinite;
 }
