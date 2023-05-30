@@ -30,6 +30,14 @@ body{
     font-size: 20px;
     background: linear-gradient(45deg , rgb(50, 84, 177), rgb(248, 81, 81));
     border-radius: 10px;
+    animation: colorful 5s infinite;
+}
+
+@keyframes colorful {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
 }
 
 .continue:hover{
