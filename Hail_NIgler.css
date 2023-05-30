@@ -48,5 +48,18 @@ body{
         0 0 25px red,
         0 0 50px red,
         0 0 20px red;
-
 }
+
+
+@media (max-width: 800px) {
+    .warning{
+        font-size: 20px;
+        top: 20px;
+    }
+
+    .continue{
+        top: 250px;
+        left: -80px;
+    }
+}
+
