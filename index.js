@@ -35,14 +35,17 @@ btn3_method.addEventListener('click',()=>{
   redirectToHail();
 })
 
+let currTime = new Date().getHours();
+
 btn1_method.addEventListener('click', () => {
   fullscreen();
-  setTimeout(() => {
-    flash_div.style.opacity = 1;
-  }, 1500);
+
+  setTimeout(
+  ()=>{currTime>=20 && currTime<=24?  flash_div.style.opacity = 1: null;},1000
+  )
 
   setTimeout(() => {
     redirectToPage();
-  }, 3000);
+  }, 2000);
 });
 
