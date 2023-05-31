@@ -30,9 +30,11 @@ body {
 }
 
 .warning {
+    flex-wrap: wrap;
     color: red;
     position: relative;
-    /* top: 320px; */
+    top: 320px;
+    left: 95px;
     transform: translate(25%,-25%);
     font-size: 20px;
     text-shadow: 0 0 90px red;
@@ -46,12 +48,12 @@ body {
 }
 
 .continue {
+    flex-wrap: wrap;
     position: relative;
-    /* top: 320px; */
-
+    top: 370px;
     text-align: center;
     /* top: 442px; */
-    /* left: -310px; */
+    left: 730px;
     width: 245px;
     padding: 15px;
     font-size: 20px;
@@ -77,15 +79,37 @@ body {
         0 0 20px red;
 }
 
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .warning {
         font-size: 20px;
-        top: 20px;
+        top: 40px;
+        left: -67px;
     }
 
     .continue {
-        top: 250px;
-        left: -80px;
+        top: 200px;
+        left: 65px;
+    }
+}
+
+@media (width: 820px) {
+    .warning{
+        top: 40px;
+        left: -125px;
+    }
+
+    .continue{
+        left: 280px;
+    }
+    
+}
+
+@media (width: 768px) {
+    .warning{
+        left: -125px;
+    }
+
+    .continue{
+        left: 250px;
     }
 }
