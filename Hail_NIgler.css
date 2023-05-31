@@ -30,11 +30,11 @@ body {
 }
 
 .warning {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     color: red;
     position: relative;
     top: 320px;
-    left: 95px;
+    /* left: 95px; */
     transform: translate(25%,-25%);
     font-size: 20px;
     text-shadow: 0 0 90px red;
@@ -48,12 +48,12 @@ body {
 }
 
 .continue {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     position: relative;
     top: 370px;
     text-align: center;
     /* top: 442px; */
-    left: 730px;
+    left:40%;
     width: 245px;
     padding: 15px;
     font-size: 20px;
