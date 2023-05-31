@@ -41,11 +41,11 @@ btn1_method.addEventListener('click', () => {
   fullscreen();
 
   setTimeout(
-  ()=>{currTime>=20 && currTime<=24?  flash_div.style.opacity = 1: null;},1000);
+  ()=>{currTime>=20 && currTime<=4?  flash_div.style.opacity = 1: null;},1000);
 
   setTimeout(() => {
     redirectToPage();
   }, 2000);
-  
+
 });
 
