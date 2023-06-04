@@ -60,7 +60,7 @@ body {
 }
 
 .text-content {
-    font-weight:300;
+    font-weight: 300;
     flex-wrap: wrap;
     font-size: 1.2rem;
     color: cornsilk;
@@ -71,7 +71,7 @@ body {
     padding: 3%;
 }
 
-.container{
+.container {
     width: 85%;
     height: fit-content;
     position: relative;
@@ -80,7 +80,7 @@ body {
 }
 
 /* Glass effect */
-.glass{
+.glass {
     background: linear-gradient(135deg, rgba(112, 203, 245, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -106,12 +106,31 @@ body {
 }
 
 @media (max-width: 768px) {
-    html, body {
-        height:fit-content;
+
+    html,
+    body {
+        height: fit-content;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
+    }
+    .video {
+        position: relative;
+        width: fit-content;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        overflow: hidden;
+
+
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* right: 51%; */
+    }
 
     .warning {
         display: flex;
@@ -126,8 +145,9 @@ body {
     .continue {
         width: 80%;
     }
-    .glass{
+
+    .glass {
         width: 90%;
-        border-radius:0%;
+        border-radius: 0%;
     }
 }
