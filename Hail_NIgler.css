@@ -63,7 +63,12 @@ body {
 }
 
 .text-content {
-    color: white;
+    position: relative;
+    /* z-index: 2; */
+    height: 100%;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 @keyframes colorful {
@@ -93,10 +98,14 @@ body {
     }
 
     .button-container{
-        display: flex;
+        
+        display: flexbo;
         left: 8%;
         overflow: hidden;
-        /* align-items: center; */
+    }
+    .continue{
+        width: 80%;
     }
     
+
 }
