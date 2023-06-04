@@ -73,6 +73,7 @@ body {
     border-radius: 10px;
     /* margin: 2%; */
     padding: 1%;
+    scroll-behavior: auto;
     
 }
 
