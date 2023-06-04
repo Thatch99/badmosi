@@ -1,22 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
+ 
     font-family: 'Play', sans-serif;
 }
 
 html {
     height: 100%;
-    width: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
 body {
     background-color: black;
     display: block;
+    margin: 0;
+    justify-content: center;
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    /* justify-content: center; */
-    /* align-items: center; */
+    
+
 }
 
 .hidden {
@@ -31,9 +33,6 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
     z-index: 9999;
-    /* align-items: center; */
-
-    /* display:flexbox; */
 }
 
 .warning {
@@ -43,21 +42,19 @@ body {
     font-size: 20px;
     text-shadow: 0 0 90px red;
     top: 6%;
-    overflow: hidden;
 }
 
 .button-container {
     position: relative;
-    width: 100%;
+    top: 20%;
     left: 40%;
-    top: 30%;
+    width: 100%;
 }
 
 .continue {
     position: relative;
     width: 20rem;
     height: 4rem;
-    /* left: ; */
     font-size: 20px;
     background: linear-gradient(45deg, rgb(50, 84, 177), rgb(248, 81, 81));
     border: none;
@@ -90,61 +87,23 @@ body {
         0 0 20px red;
 }
 
-/* @media (max-width: 1000px) {
-    .warning {
-        font-size: 20px;
-        top: 40px;
-        left: -67px;
-    }
-
-    .continue {
-        top: 200px;
-        left: 65px;
-    }
-}
-
-@media (width: 820px) {
-    .warning {
-        top: 40px;
-        left: -125px;
-    }
-
-    .continue {
-        left: 280px;
-    }
-
-} */
 
 @media (max-width: 768px) {
-    html {
-        width: 100%;
-        height: 100%;
+    body{
+        justify-content: center;
         overflow: hidden;
-        display: block;
+    }
+    .warning{
+        display: flex;
     }
 
-    .warning {
-        position: relative;
-        /* left: -125px; */
+    .button-container{
+        display: flex;
+        left: 8%;
+        overflow: hidden;
+        /* align-items: center; */
     }
-
-    .button-container {
-        
-        position: relative;
-        width: 100%;
-        left:0;
-        
-        /* top: 30%; */
-        width: 100%;
-    }
-    .continue{
-        position: relative;
-        left: 50%;
-    }
+    
 
 }
 
-
-.text-content {
-    color: white;
-}
