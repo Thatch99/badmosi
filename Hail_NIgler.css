@@ -63,7 +63,7 @@ body {
     font-weight:300;
     flex-wrap: wrap;
     font-size: 1.2rem;
-    color: #aaccdb;
+    color: cornsilk;
     position: relative;
     /* top: 4%; */
     margin-left: 4%;
@@ -76,7 +76,7 @@ body {
     height: fit-content;
     position: relative;
     margin: 2% auto;
-      
+
 }
 
 /* Glass effect */
