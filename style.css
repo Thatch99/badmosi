@@ -226,7 +226,7 @@ button {
         border-right: 2px solid hsl(0, 0%, 80%);
         overflow-wrap: break-word;
         cursor: none;
-        animation: typewriter 3s steps(100) 1s 1 normal both, blinkTextCursor 500ms infinite;
+        /* animation: typewriter 3s steps(100) 1s 1 normal both, blinkTextCursor 500ms infinite; */
     }
 
     @keyframes typewriter {
