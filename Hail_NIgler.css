@@ -1,5 +1,4 @@
 * {
-
     font-family: 'Play', sans-serif;
 }
 
@@ -69,7 +68,6 @@ body {
     margin-left: 4%;
     margin-right: 5%;
     padding: 3%;
-
 }
 
 .container{
@@ -103,7 +101,6 @@ body {
         0 0 50px red,
         0 0 20px red;
 }
-
 
 @media (max-width: 768px) {
     html {
