@@ -8,17 +8,6 @@ html {
     padding: 0;
     overflow: hidden;
 }
-
-@font-face {
-    font-family: 'Skyrim_Daedra';
-    src: url('Resources/Fonts/Skyrim_Daedra.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'UrnordiskaRunor';
-    src: url('Resources/Fonts/UrnordiskaRunor.ttf') format('truetype');
-}
-
 body {
     background-image: url('Resources/amugos_bg.jpg');
     background-repeat: no-repeat;
