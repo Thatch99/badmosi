@@ -96,7 +96,7 @@ body {
 
     .button-container {
 
-        display: flexbox;
+        display: flexbo;
         left: 8%;
         overflow: hidden;
     }
@@ -104,6 +104,6 @@ body {
     .continue {
         width: 80%;
     }
-
-
+    
 }
+
