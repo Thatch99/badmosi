@@ -61,9 +61,10 @@ body {
 }
 
 .text-content {
+    font-weight:300;
     flex-wrap: wrap;
     font-size: 1.2rem;
-    color: white;
+    color: #aaccdb;
     position: relative;
     /* top: 4%; */
     margin-left: 4%;
@@ -74,18 +75,20 @@ body {
 
 .container{
     width: 85%;
-    height: 102%;
+    height: fit-content;
+    position:relative;
     margin: 2% auto;
+      
 }
 
 /* Glass effect */
 .glass{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(112, 203, 245, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(76, 247, 232, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(10, 144, 161, 0.37);
 }
 
 @keyframes colorful {
