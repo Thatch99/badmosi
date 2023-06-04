@@ -63,12 +63,7 @@ body {
 }
 
 .text-content {
-    position: relative;
-    /* z-index: 2; */
-    height: 100%;
-    width: 100%;
-    padding-left: 4%;
-    padding-right: 4%;
+    color: white;
 }
 
 @keyframes colorful {
@@ -104,6 +99,4 @@ body {
         /* align-items: center; */
     }
     
-
 }
-
