@@ -76,7 +76,6 @@ body {
 .container{
     width: 85%;
     height: fit-content;
-    position:relative;
     margin: 2% auto;
       
 }
