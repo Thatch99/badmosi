@@ -285,7 +285,7 @@ button:hover {
         left: 27%;
         margin-bottom: 2em;
     }
-
+/* 
     button:hover {
         background: #03e9f4;
         color: #050801;
@@ -314,7 +314,7 @@ button:hover {
             0 0 50px #f7163c,
             0 0 20px #f7163c;
 
-    }
+    } */
 
     .heading3 {
         font-size: 100%;
