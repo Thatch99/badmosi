@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-image: url('https://images7.alphacoders.com/114/1146879.jpg');
+    background-image: url('Resources/amugos_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(1px);
