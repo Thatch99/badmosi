@@ -4,11 +4,19 @@
     font-family: 'Play', sans-serif;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .hidden {
@@ -23,21 +31,38 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
     z-index: 9999;
-  
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
+    /* align-items: center; */
+
+    /* display:flexbox; */
 }
 
 .warning {
-    /* flex-wrap: wrap; */
     color: red;
     position: relative;
-    top: 320px;
-    /* left: 95px; */
-    transform: translate(25%,-25%);
+    text-align: center;
     font-size: 20px;
     text-shadow: 0 0 90px red;
+    top: 6%;
+    overflow: hidden;
+}
+
+.button-container {
+    position: relative;
+    width: 100%;
+    left: 40%;
+    top: 30%;
+}
+
+.continue {
+    position: relative;
+    width: 20rem;
+    height: 4rem;
+    /* left: ; */
+    font-size: 20px;
+    background: linear-gradient(45deg, rgb(50, 84, 177), rgb(248, 81, 81));
+    border: none;
+    border-radius: 10px;
+    animation: colorful 5s infinite;
 }
 
 .text-content {
@@ -45,22 +70,8 @@ body {
     /* z-index: 2; */
     height: 100%;
     width: 100%;
-}
-
-.continue {
-    /* flex-wrap: wrap; */
-    position: relative;
-    top: 370px;
-    text-align: center;
-    /* top: 442px; */
-    left:40%;
-    width: 245px;
-    padding: 15px;
-    font-size: 20px;
-    background: linear-gradient(45deg, rgb(50, 84, 177), rgb(248, 81, 81));
-    border: none;
-    border-radius: 10px;
-    animation: colorful 5s infinite;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 @keyframes colorful {
@@ -79,7 +90,7 @@ body {
         0 0 20px red;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .warning {
         font-size: 20px;
         top: 40px;
@@ -93,27 +104,47 @@ body {
 }
 
 @media (width: 820px) {
-    .warning{
+    .warning {
         top: 40px;
         left: -125px;
     }
 
-    .continue{
+    .continue {
         left: 280px;
     }
-    
-}
 
-@media (width: 768px) {
-    .warning{
-        left: -125px;
+} */
+
+@media (max-width: 768px) {
+    html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
     }
 
+    .warning {
+        position: relative;
+        /* left: -125px; */
+    }
+
+    .button-container {
+        
+        position: relative;
+        width: 100%;
+        left:0;
+        
+        /* top: 30%; */
+        width: 100%;
+    }
     .continue{
-        left: 250px;
+        position: relative;
+        left: 50%;
     }
+
 }
 
-.text-content{
+
+.text-content {
     color: white;
 }
