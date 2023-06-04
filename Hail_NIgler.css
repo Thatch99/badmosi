@@ -109,14 +109,12 @@ body {
 
 
 @media (max-width: 768px) {
-    html {
-        overflow: scroll;
-    }
-
-    body {
-        justify-content: center;
-        /* overflow: hidden; */
-    }
+    html, body {
+        height:fit-content;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
     .warning {
         display: flex;
@@ -130,5 +128,9 @@ body {
 
     .continue {
         width: 80%;
+    }
+    .glass{
+        width: 90%;
+        border-radius:0%;
     }
 }
