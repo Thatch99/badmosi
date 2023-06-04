@@ -225,6 +225,7 @@ button:hover {
         text-align: center;
         border-right: 2px solid hsl(0, 0%, 80%);
         overflow-wrap: break-word;
+ 
         /* animation: typewriter 3s steps(100) 1s 1 normal both, blinkTextCursor 500ms infinite; */
     }
 
