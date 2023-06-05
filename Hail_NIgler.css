@@ -109,12 +109,12 @@ body {
 
 /* Glass effect */
 .glass {
-    background: linear-gradient(135deg, rgba(248, 176, 116, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(245, 90, 237, 0.089), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba(114, 253, 0, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.37);
+    border: 1px solid red;
+    box-shadow: 0 8px 32px 0 cyan;
 }
 
 @keyframes colorful {
