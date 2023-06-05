@@ -11,6 +11,11 @@ html {
 }
 
 body {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: black;
     display: block;
     margin: 0;
@@ -109,11 +114,11 @@ body {
 
 /* Glass effect */
 .glass {
-    background: linear-gradient(135deg, rgba(112, 203, 245, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(248, 176, 116, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border: 1px solid rgba(76, 247, 232, 0.18);
+    border: 1px solid rgba(114, 253, 0, 0.18);
     box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.37);
 }
 
