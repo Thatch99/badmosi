@@ -52,7 +52,7 @@ body {
     border-right: 2px solid;
     /* white-space: nowrap; */
     overflow: hidden;
-    /* text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f; */
+    text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f;
     /* animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms infinite; */
 
 }
