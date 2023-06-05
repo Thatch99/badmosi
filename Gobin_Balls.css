@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Who asks Satan';
+    font-family: 'who asks satan';
     letter-spacing: 1rem;
 }
 
 @font-face {
     font-family: 'Who asks Satan';
-    src: url('Resources/Fonts/who asks satan.ttf') format('truetype');
+    src: url('Resources/who asks satan.ttf') format('truetype');
 }
 
 body {
