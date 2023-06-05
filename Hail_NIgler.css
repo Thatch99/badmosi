@@ -6,7 +6,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 body {
@@ -17,7 +17,9 @@ body {
     height: 100vh;
     width: 100%;
 }
-
+.overflow-scroll {
+    overflow: scroll;
+  }
 .hidden {
     display: none;
 }
