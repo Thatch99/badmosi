@@ -183,7 +183,7 @@ button:hover {
     white-space: nowrap;
     width: 70%;
     text-align: center;
-    text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f;
+    /* text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f; */
 }
 
 .video-container {
@@ -331,7 +331,7 @@ button:hover {
         letter-spacing: 0.3em;
         text-transform: uppercase;
         transform: rotate(360deg);
-        text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f;
+        /* text-shadow: 0 0 5px #28343a, 0 0 10px #385c8a, 0 0 20px #0fff2f; */
         top: initial;
         left: 0;
         text-align: center;
