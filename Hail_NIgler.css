@@ -20,7 +20,7 @@ body {
 }
 
 .overflow-scroll {
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .hidden {
@@ -75,15 +75,15 @@ body {
 
 .video-container {
     position: relative;
-    margin-top: 1%;
-    width: 50%;
+    width:fit-content;
     padding-top: 1%;
-    display: block;
+    display:flex;
     left: 10%;
-    /* transform: translateX(50%); */
+    margin:0;
 }
 
 .video {
+    width: 90%;
     position: relative;
 }
 
