@@ -13,39 +13,28 @@ const fullscreen = () => {
   }
 };
 
-function redirectToPage() {
-  window.location.href = 'Cridustine.html';
-}
-function redirectToGoblin() {
-  window.location.href = 'Gobin_Balls.html';
-}
-function redirectToHail() {
-  window.location.href = 'Hail_NIgler.html';
-}
-
-const btn1_method = document.querySelector('.button-1');
-const btn2_method = document.querySelector('.button-2');
-const btn3_method = document.querySelector('.button-3');
-const flash_div = document.getElementById('flash');
-btn2_method.addEventListener('click',()=>{
-  redirectToGoblin();
-})
-
-btn3_method.addEventListener('click',()=>{
-  redirectToHail();
-})
+const buttons = document.querySelectorAll('.button-container button')
 
 let currTime = new Date().getHours();
 
-btn1_method.addEventListener('click', () => {
+buttons[0].addEventListener('click', () => {
   fullscreen();
 
   setTimeout(
-  ()=>{currTime>=20 && currTime<=4?  flash_div.style.opacity = 1: null;},1000);
+    () => { currTime >= 20 && currTime <= 4 ? flash_div.style.opacity = 1 : null; }, 1000);
 
   setTimeout(() => {
-    redirectToPage();
+    window.location.href = 'Cridustine.html';;
   }, 2000);
 
 });
+
+buttons[1].addEventListener('click', () => {
+  window.location.href = 'Gobin_Balls.html';
+})
+
+buttons[2].addEventListener('click', () => {
+  window.location.href = 'Hail_NIgler.html'
+})
+
 
