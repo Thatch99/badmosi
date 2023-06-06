@@ -68,7 +68,7 @@ body {
     }
 
     to {
-        width:77%;
+        width: 76.6%;
     }
 }
 
@@ -230,7 +230,7 @@ button:hover {
         display: block;
         height: 4em;
         position: relative;
-        left: 10%;
+        left: 0;
     }
 
     .text {
@@ -242,8 +242,29 @@ button:hover {
         text-align: center;
         border-right: 1px solid hsl(0, 0%, 80%);
         overflow-wrap: break-word;
-        animation: typewriter 2s steps(100) 1s 1 normal both, blinkTextCursor 1000ms infinite;
     }
+    @keyframes typewriter {
+        0% {
+            width: 100%;
+        }
+    
+        100% {
+            width: 100%;
+        }
+    }
+    
+    @keyframes blinkTextCursor {
+    
+        from,
+        to {
+            border-color: transparent;
+        }
+    
+        50% {
+            border-color: transparent;
+        }
+    }
+    
 
     .video {
         position: relative;
