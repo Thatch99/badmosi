@@ -51,7 +51,7 @@ body {
 @keyframes neon {
     0%,
     100% {
-        text-shadow: 0 0 10px #ff0000a8, 0 0 20px #ff008ca8, 0 0 20px #ef00e3a8, 0 0 20px #ff0000a8, 0 0 2px #fe2828, 2px 2px 2px #6a1480;
+        text-shadow: 0 0 10px #ff0000a8, 0 0 20px #ff5100, 0 0 20px #ef8f00a8, 0 0 20px #ff0000a8, 0 0 2px #fe2828, 2px 2px 2px #9901ff;
         color: #ffffff;
     }
     50% {
