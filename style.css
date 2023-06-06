@@ -8,6 +8,7 @@ html {
     padding: 0;
     overflow: hidden;
 }
+
 body {
     background-image: url('Resources/amugos_bg.jpg');
     background-repeat: no-repeat;
@@ -21,12 +22,18 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
+
 .unselectable {
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE/Edge */
-    user-select: none; /* Standard syntax */
-  }
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* Standard syntax */
+}
+
 #all-container {
     height: 100vh;
     width: 80rem;
@@ -40,7 +47,6 @@ body {
 .writer {
     display: inline;
     position: relative;
-  
     left: 10%;
 }
 
@@ -53,19 +59,18 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f;
-    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms infinite;
+    animation: typewriter 4s steps(44), blinkTextCursor 0.4s step-end infinite;
 
 }
 
 #flash {
     position: fixed;
     /* top: 0;*/
-    left: 0; 
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
     pointer-events: none;
-
 }
 
 #flash img {
@@ -74,25 +79,24 @@ body {
     height: 100%;
     user-select: none;
     object-fit: cover;
-
 }
 
 @keyframes typewriter {
-    from {
+    0% {
         width: 0;
     }
 
-    to {
-        width: 100%;
+    80% {
+        width: 77%;
     }
 }
 
 @keyframes blinkTextCursor {
-    from {
+    0% {
         border-right-color: hsl(0, 0%, 80%);
     }
 
-    to {
+    100% {
         border-right-color: transparent;
     }
 }
@@ -104,10 +108,9 @@ body {
     display: inline-flex;
     flex-direction: column;
     left: 10%;
- 
 }
-button {
 
+button {
     color: wheat;
     width: 100%;
     position: relative;
@@ -118,6 +121,7 @@ button {
     margin-bottom: 5em;
     animation: colorful 6s infinite;
 }
+
 .button-1 {
 
     border: 10%;
@@ -125,12 +129,14 @@ button {
     border-color: #03e9f4;
     background: rgb(0, 0, 0);
 }
+
 .button-2 {
     border: 10%;
     border-style: solid;
     border-color: #37ff41;
     background: rgb(0, 0, 0);
 }
+
 .button-3 {
     border: 10%;
     border-style: solid;
@@ -194,6 +200,7 @@ button:hover {
     display: inline-block;
     transform: translateX(50%);
 }
+
 .video {
     position: relative;
 }
@@ -215,10 +222,14 @@ button:hover {
     }
 
     .writer {
+        text-overflow: ellipsis;
         display: block;
-        height: 5em;
+        height: 4em;
         position: relative;
         left: 0;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 1px;
     }
 
     .text {
@@ -230,29 +241,29 @@ button:hover {
         text-align: center;
         border-right: 2px solid hsl(0, 0%, 80%);
         overflow-wrap: break-word;
- 
-        animation: typewriter 3s steps(100) 1s 1 normal both, blinkTextCursor 500ms infinite;
+        animation: typewriter 2s steps(44), blinkTextCursor .4s step-end infinite alternate;
     }
 
     @keyframes typewriter {
-        from {
+        0% {
             width: 0;
         }
-
-        to {
+    
+        90% {
             width: 100%;
         }
     }
 
     @keyframes blinkTextCursor {
-        from {
+        0% {
             border-right-color: hsl(0, 0%, 80%);
         }
 
-        to {
+        100% {
             border-right-color: transparent;
         }
     }
+
 
     .video {
         position: relative;
@@ -261,8 +272,6 @@ button:hover {
         height: 100%;
         top: 10%;
         overflow: hidden;
-
-
     }
 
     .video-container {
