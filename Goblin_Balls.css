@@ -40,18 +40,32 @@ body {
     /* border:1px solid rgba(255, 255, 255, 0.18); */
     /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
     text-align: center;
-    color: aqua;
+    /* color: aqua; */
     font-size: larger;
-    color: rgb(197, 18, 18);
+    /* color: rgb(197, 18, 18); */
     text-shadow: 0 0 5px #ff0f2f, 0 0 1px #ff0f2f, 0 0 20px #ff0f2f;
     /* animation: colorful 6s infinite; */
+    animation: neon 1.2s ease infinite;
 }
 
-@keyframes colorful {
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ff0000a8, 0 0 20px #ff008ca8, 0 0 20px #ef00e3a8, 0 0 20px #ff0000a8, 0 0 2px #fe2828, 2px 2px 2px #6a1480;
+        color: #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #1f141a9a;
+        color: #dd084f;
+    }
+}
+
+
+/* @keyframes colorful {
     100% {
         filter: hue-rotate(360deg);
     }
-}
+} */
 
 h1 {
     position: relative;
