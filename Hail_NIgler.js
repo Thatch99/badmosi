@@ -28,6 +28,6 @@ continue_btn.addEventListener('click',async function () {
         vid_cont.classList.add('hidden');
 
     }
-    document.documentElement.classList.add('overflow-scroll');
+    // document.documentElement.classList.add('overflow-scroll');
     localStorage.setItem("vid-count", 1);
 })

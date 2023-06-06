@@ -11,7 +11,10 @@ html {
 }
 
 body {
-    background-color: black;
+    background: url('https://preview.redd.it/blade-runner-2049-purple-edition-v0-mc9xv0zlfm091.jpg?auto=webp&s=fc6b88f62a8aedc9c729a904eca6c916cca43d78');
+    background-repeat: no-repeat;
+    background-size: cover;
+
     display: block;
     margin: 0;
     justify-content: center;
@@ -36,7 +39,8 @@ body {
     background-color: rgba(0, 0, 0, 1);
     z-index: 9999;
 }
-.vid-ts{
+
+.vid-ts {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,12 +51,14 @@ body {
     align-items: center;
     /* overflow-y: hidden; */
 }
-.vid-ts video{
-    width:100%;
-    height:100%;
+
+.vid-ts video {
+    width: 100%;
+    height: 100%;
     /* transform: translateX(50%); */
-    
+
 }
+
 .warning {
     color: red;
     position: relative;
@@ -91,11 +97,11 @@ body {
 
 .video-container {
     position: relative;
-    width:fit-content;
+    width: fit-content;
     padding-top: 1%;
-    display:flex;
+    display: flex;
     left: 10%;
-    margin:0;
+    margin: 0;
 }
 
 .video {
@@ -120,17 +126,23 @@ body {
     height: fit-content;
     position: relative;
     margin: 2% auto;
+    margin-top:2%;
+    max-height:90%;
+    overflow-y: auto;
+    padding: 10px;
 
+}
+.container::-webkit-scrollbar{
+    width: auto;
 }
 
 /* Glass effect */
 .glass {
-    background: linear-gradient(135deg, rgba(245, 90, 237, 0.089), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgb(41, 84, 224);
+    background: linear-gradient(104deg, rgba(74, 53, 75, 0.814) 0%, rgba(117, 94, 180, 0.39) 100%);
     border-radius: 20px;
     /* border: 1px solid red; */
-    box-shadow: 0 8px 32px 0 cyan;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.527);
 }
 
 @keyframes colorful {
@@ -145,7 +157,7 @@ body {
 
     html,
     body {
-        height: fit-content;
+        height: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -172,13 +184,14 @@ body {
         /* right: 51%; */
     }
 
-    .vid-ts video{
-        width:100%;
-        height:100%;
+    .vid-ts video {
+        width: 100%;
+        height: 100%;
         /* top:50%; */
         transform: translatey(-10%);
-        
+
     }
+
     .warning {
         display: flex;
     }
@@ -188,7 +201,17 @@ body {
         left: 8%;
         overflow: hidden;
     }
-
+    .container {
+        width: 85%;
+        /* height: 100%; */
+        position: relative;
+        margin: 2% auto;
+        margin-top:3%;
+        max-height:95%;
+        overflow-y: auto;
+        padding: 10px;
+    
+    }
     .continue {
         width: 80%;
     }
