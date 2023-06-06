@@ -18,7 +18,7 @@ const fullscreen = () => {
     }
 };
 
-continue_btn.addEventListener('click',async function () {
+continue_btn.addEventListener('click', async function () {
     overlay_element.classList.add('hidden')
     if (!localStorage.getItem('vid-count')) {
         vid_cont.classList.remove('hidden');
