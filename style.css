@@ -245,7 +245,6 @@ button:hover {
         animation: typewriter 2s steps(100) 1s 1 normal both, blinkTextCursor 1000ms infinite;
     }
 
-
     .video {
         position: relative;
         width: fit-content;
