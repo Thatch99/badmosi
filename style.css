@@ -235,6 +235,7 @@ button:hover {
 
     .text {
         position: relative;
+        padding-top:2% ;
         height: 100%;
         font-size: 110%;
         white-space: normal;
@@ -242,27 +243,18 @@ button:hover {
         text-align: center;
         border-right: 1px solid hsl(0, 0%, 80%);
         overflow-wrap: break-word;
+        animation: neon 1.2s ease infinite;
     }
-    
-    @keyframes typewriter {
-        0% {
-            width: 100%;
-        }
-    
+
+    @keyframes neon {
+        0%,
         100% {
-            width: 100%;
+            text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+            color: #aa1e30;
         }
-    }
-    
-    @keyframes blinkTextCursor {
-    
-        from,
-        to {
-            border-color: transparent;
-        }
-    
         50% {
-            border-color: transparent;
+            text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+            color: #e43030;
         }
     }
     
