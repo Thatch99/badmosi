@@ -218,6 +218,6 @@ body {
 
     .glass {
         width: 90%;
-        border-radius: 0%;
+        border-radius: 20px;
     }
 }
