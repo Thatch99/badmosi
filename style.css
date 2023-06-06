@@ -250,7 +250,7 @@ button:hover {
         0%,
         100% {
             text-shadow: 0 0 10px #ff0000a8, 0 0 20px #ff0000a8, 0 0 20px #ef00e3a8, 0 0 20px #ff0000a8, 0 0 2px #fe2828, 2px 2px 2px #806914;
-            color: #ffffff;
+            color: #ff9100;
         }
         50% {
             text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
