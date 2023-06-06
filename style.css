@@ -59,12 +59,9 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-shadow: 0 0 5px #ff0f2f, 0 0 10px #ff0f2f, 0 0 20px #ff0f2f;
-<<<<<<< HEAD
+
     animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms infinite;
 }
-=======
-    animation: typewriter 4s steps(44), blinkTextCursor 0.4s step-end infinite;
->>>>>>> bab4a81dfc189e2cc408958b07d9798e2c6d9588
 
 @keyframes typewriter {
     from {
@@ -106,28 +103,6 @@ body {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-=======
-@keyframes typewriter {
-    0% {
-        width: 0;
-    }
-
-    80% {
-        width: 77%;
-    }
-}
-
-@keyframes blinkTextCursor {
-    0% {
-        border-right-color: hsl(0, 0%, 80%);
-    }
-
-    100% {
-        border-right-color: transparent;
-    }
-}
->>>>>>> bab4a81dfc189e2cc408958b07d9798e2c6d9588
 
 .button-container {
     width: fit-content;
@@ -136,14 +111,9 @@ body {
     display: inline-flex;
     flex-direction: column;
     left: 10%;
-<<<<<<< HEAD
 
 }
 
-button {
-=======
-}
->>>>>>> bab4a81dfc189e2cc408958b07d9798e2c6d9588
 
 button {
     color: wheat;
@@ -261,14 +231,7 @@ button:hover {
         display: block;
         height: 4em;
         position: relative;
-<<<<<<< HEAD
         left: 10%;
-=======
-        left: 0;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding: 1px;
->>>>>>> bab4a81dfc189e2cc408958b07d9798e2c6d9588
     }
 
     .text {
@@ -280,32 +243,8 @@ button:hover {
         text-align: center;
         border-right: 1px solid hsl(0, 0%, 80%);
         overflow-wrap: break-word;
-<<<<<<< HEAD
 
         animation: typewriter 2s steps(100) 1s 1 normal both, blinkTextCursor 1000ms infinite;
-=======
-        animation: typewriter 2s steps(44), blinkTextCursor .4s step-end infinite alternate;
-    }
-
-    @keyframes typewriter {
-        0% {
-            width: 0;
-        }
-    
-        90% {
-            width: 100%;
-        }
-    }
-
-    @keyframes blinkTextCursor {
-        0% {
-            border-right-color: hsl(0, 0%, 80%);
-        }
-
-        100% {
-            border-right-color: transparent;
-        }
->>>>>>> bab4a81dfc189e2cc408958b07d9798e2c6d9588
     }
 
 
