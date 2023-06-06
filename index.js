@@ -14,14 +14,14 @@ const fullscreen = () => {
 };
 
 const buttons = document.querySelectorAll('.button-container button')
-
+const flash_div = document.querySelector('#flash')
 let currTime = new Date().getHours();
 
 buttons[0].addEventListener('click', () => {
   fullscreen();
 
   setTimeout(
-    () => { currTime >= 20 && currTime <= 4 ? flash_div.style.opacity = 1 : null; }, 1000);
+    () => { currTime >= 4 && currTime <= 20 ? flash_div.style.opacity = 1 : null; }, 1000);
 
   setTimeout(() => {
     window.location.href = 'Cridustine.html';;
