@@ -241,7 +241,7 @@ button:hover {
         white-space: normal;
         word-wrap: break-word;
         text-align: center;
-        border-right: 1px solid hsl(0, 0%, 80%);
+        border-right: 1px solid hsla(0, 0%, 80%, 0);
         overflow-wrap: break-word;
         animation: neon 1.2s ease infinite;
     }
